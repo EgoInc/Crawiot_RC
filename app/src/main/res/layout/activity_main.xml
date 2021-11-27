@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:orientation="vertical"
+    android:background="@drawable/background"    >
+
+
+    <Button
+        android:id="@+id/moveButton"
+        android:layout_width="150dp"
+        android:layout_height="80dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="60dp"
+        android:layout_marginBottom="20dp"
+        android:background="@drawable/rounded_button"
+        android:text="@string/forward"
+        android:fontFamily="@font/audiowide"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.501"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteY="272dp" />
+
+    <NumberPicker
+        android:id="@+id/numberPicker"
+        android:layout_width="121dp"
+        android:layout_height="114dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="8dp"
+
+        android:width="100dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toTopOf="@+id/moveButton"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/backButton"
+        tools:ignore="MissingConstraints" />
+
+    <Button
+        android:id="@+id/backButton"
+        android:layout_width="150dp"
+        android:layout_height="80dp"
+        android:layout_marginTop="24dp"
+        android:background="@drawable/rounded_button"
+        android:layout_gravity="center"
+        android:fontFamily="@font/audiowide"
+        android:text="@string/backward"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+<LinearLayout
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="50dp"
+    android:layout_gravity="center">
+    <Button
+        android:id="@+id/goToLeft"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/arrow_shape_left" />
+
+    <TextView
+        android:id="@+id/showDegree"
+        android:layout_width="50dp"
+        android:layout_height="56dp"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:text="0"
+        android:textSize="18dp"
+        android:fontFamily="@font/audiowide"
+        android:textAlignment="center"
+        android:textColor="@color/dark_grey" />
+    <Button
+        android:id="@+id/goToRight"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/arrow_shape_right" />
+
+
+</LinearLayout>
+    <SeekBar
+        android:id="@+id/rotateDegree"
+        style="@style/Widget.AppCompat.SeekBar.Discrete"
+        android:layout_width="252dp"
+        android:layout_height="40dp"
+        android:max="6"
+        android:progress="3"
+        android:progressDrawable="@drawable/background"
+        android:layout_gravity="center"
+        tools:layout_editor_absoluteX="90dp"
+        tools:layout_editor_absoluteY="466dp"
+        android:layout_marginTop="10dp"
+
+/>
+
+
+</LinearLayout>
